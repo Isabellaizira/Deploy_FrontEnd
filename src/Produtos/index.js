@@ -69,6 +69,7 @@ export default function Produtos() {
             data.append('file', imagem)
 
             const resposta = await apiLocal.post('/Produtos', data, {
+                
 
             })
             toast.success(resposta.data.dados)
